@@ -29,15 +29,17 @@
 	</nav>
 
 
-<!-- Contact -->
+<!-- Contact i looked at the sample in the style i used from bootswatch.com. I need to figure out how to make this responsive because when it is too large it bleeds into my footer-->
 
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-9 col-md-8 col-md-12 pull-left">
 				<div class="panel panel-default">
 					<div class="panel panel-heading">
-						<h3 class="panel-title">Contact</h3>
+						<div class="panel panel-heading">
+						<h3>Contact</h3>
+						</div>
 					</div>
 
 					<div class="panel panel-body">
@@ -45,23 +47,41 @@
 							<div class="col-md-12">
 					
 
-							<form>
-								Name
-								<br>
-								<input type="text" name="name" placeholder="Your Name here">
-								Email
-								<br>
-								<input type="text" name="Email" placeholder="Your Email here">
-								Message
-								<br>
-								<textarea></textarea>
-							
+							<form class="form-horizontal">
+								  <fieldset>
+								    
+								    <div class="form-group">
+								      <label for="Name" class="col-lg-2 control-label">Name</label>
+								      <div class="col-lg-10">
+								        <input type="text" class="form-control" id="Name" placeholder="Name">
+								      </div>
+								    </div>
+								 
+									<div class="form-group">
+								      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+								      <div class="col-lg-10">
+								        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+								      </div>
+								    </div>
 
 
-							
 
-
-							</form>
+								    <div class="form-group">
+								      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+								      <div class="col-lg-10">
+								        <textarea class="form-control" rows="3" id="textArea"></textarea>
+								        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+								      </div>
+								    </div>
+								    
+								    <div class="form-group">
+								      <div class="col-lg-10 col-lg-offset-2">
+								        <button type="reset" class="btn btn-default">Cancel</button>
+								        <button type="submit" class="btn btn-primary">Submit</button>
+								      </div>
+								    </div>
+								  </fieldset>
+								</form>
 							</div>
 						</div>
 
